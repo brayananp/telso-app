@@ -29,7 +29,7 @@
     "zustand": "^5.0.3"
   },
   "devDependencies": {
-    "biome": "^1",
+    "biome": "0.3.3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
