@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "pnpm run  prisma:deploy && next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "biome check",
+    "format": "biome format",
     "prisma:deploy": "pnpm dlx prisma@6.5.0 migrate deploy && prisma generate",
     "seed": "ts-node src/seed/seed-database.ts"
   },
@@ -28,13 +29,12 @@
     "zustand": "^5.0.3"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^2",
+    "biome": "^1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.0.10",
+    
     "prisma": "^6.5.0",
     "tailwindcss": "^4",
     "ts-node": "^10.9.2",
